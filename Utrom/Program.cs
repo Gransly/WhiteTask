@@ -10,10 +10,7 @@ namespace Utrom
         {
             string dirName = "";
             string destName = "";
-            foreach(string s in args) 
-            {
-                Console.WriteLine(s);
-            }
+
 
             if (args.Length == 4)
             {
@@ -38,7 +35,7 @@ namespace Utrom
 
             while (!Directory.Exists(destName))
             {
-                Console.Write("Destination directory isn't exist\nWrite correct dirrectory (e.g: D:\\Utrom's secrets): ");
+                Console.Write("Destination directory isn't exist\nWrite correct dirrectory (e.g: D:\\Utrom's secrets1): ");
                 destName = Console.ReadLine();
             }
 
