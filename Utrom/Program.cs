@@ -10,7 +10,6 @@ namespace Utrom
         {
             string dirName = "";
             string destName = "";
-            Console.WriteLine(args.Length);
             foreach(string s in args) 
             {
                 Console.WriteLine(s);
