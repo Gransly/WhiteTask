@@ -1,0 +1,13 @@
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\bin\Debug\netcoreapp3.1\Utrom.exe
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\bin\Debug\netcoreapp3.1\Utrom.deps.json
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\bin\Debug\netcoreapp3.1\Utrom.runtimeconfig.json
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\bin\Debug\netcoreapp3.1\Utrom.runtimeconfig.dev.json
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\bin\Debug\netcoreapp3.1\Utrom.dll
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\bin\Debug\netcoreapp3.1\Utrom.pdb
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.csprojAssemblyReference.cache
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.AssemblyInfoInputs.cache
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.AssemblyInfo.cs
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.csproj.CoreCompileInputs.cache
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.dll
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.pdb
+C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.genruntimeconfig.cache
