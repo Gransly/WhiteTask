@@ -6,6 +6,6 @@ namespace Utrom
 {
     interface IArchiveFolder
     {
-        void Archive(string directionFolder);
+        void Archive(string directionFolder, string zipName);
     }
 }

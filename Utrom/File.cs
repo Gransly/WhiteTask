@@ -42,7 +42,7 @@ namespace Utrom
             }
         }
 
-        public void RenameFile(bool sameNames)
+        public void RenameFile(bool sameNames)              //TODO Если больше 2-х файлов с одинаковыми именами 
         {
             string pathWithoutUUID = PathWithoutUUID();
             if (sameNames && System.IO.File.Exists(path))

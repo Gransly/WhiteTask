@@ -6,12 +6,10 @@ namespace Utrom
 {
     interface IMainFolder
     {
-        string[] GetDericrories(string path);
+        string[] GetDirecrories(string path);
         string[] GetFiles(string path);
         void DelSameNameFiles();
         void DelSameNameDirs();
         bool CheckDirs();
-
-        
     }
 }

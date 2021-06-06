@@ -9,17 +9,15 @@ namespace Utrom
     {
         private string path;
 
-        public string GetPath() 
-        {
-            return path;
-        }
+        public string Path { get { return path; } private set { path = value; } }
+
         public ArchiveFolder(string path) 
         {
             this.path = path;
         }
-        public void Archive(string directionFolder)
+        public void Archive(string directionFolder , string zipName)
         {
-            ZipFile.CreateFromDirectory(directionFolder, path + "\\Utrom's secrets.zip");
+            ZipFile.CreateFromDirectory(directionFolder, path + $"\\{zipName}.zip");
         }
     }
 }

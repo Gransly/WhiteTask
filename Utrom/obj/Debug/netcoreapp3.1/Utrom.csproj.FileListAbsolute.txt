@@ -11,3 +11,16 @@ C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utro
 C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.dll
 C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.pdb
 C:\Users\bob03\source\repos\C#Education\Utrom\Utrom\obj\Debug\netcoreapp3.1\Utrom.genruntimeconfig.cache
+D:\Git\WhiteTask\Utrom\bin\Debug\netcoreapp3.1\Utrom.exe
+D:\Git\WhiteTask\Utrom\bin\Debug\netcoreapp3.1\Utrom.deps.json
+D:\Git\WhiteTask\Utrom\bin\Debug\netcoreapp3.1\Utrom.runtimeconfig.json
+D:\Git\WhiteTask\Utrom\bin\Debug\netcoreapp3.1\Utrom.runtimeconfig.dev.json
+D:\Git\WhiteTask\Utrom\bin\Debug\netcoreapp3.1\Utrom.dll
+D:\Git\WhiteTask\Utrom\bin\Debug\netcoreapp3.1\Utrom.pdb
+D:\Git\WhiteTask\Utrom\obj\Debug\netcoreapp3.1\Utrom.csproj.AssemblyReference.cache
+D:\Git\WhiteTask\Utrom\obj\Debug\netcoreapp3.1\Utrom.AssemblyInfoInputs.cache
+D:\Git\WhiteTask\Utrom\obj\Debug\netcoreapp3.1\Utrom.AssemblyInfo.cs
+D:\Git\WhiteTask\Utrom\obj\Debug\netcoreapp3.1\Utrom.csproj.CoreCompileInputs.cache
+D:\Git\WhiteTask\Utrom\obj\Debug\netcoreapp3.1\Utrom.dll
+D:\Git\WhiteTask\Utrom\obj\Debug\netcoreapp3.1\Utrom.pdb
+D:\Git\WhiteTask\Utrom\obj\Debug\netcoreapp3.1\Utrom.genruntimeconfig.cache

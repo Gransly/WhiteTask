@@ -8,10 +8,12 @@ namespace Utrom
     class MainFolder : IMainFolder
     {
         string path;
+        const string pathCopy = "D:\\Utrom's_Copy";
         
         public MainFolder(string path) 
         {
-            this.path = path;
+            DirectoryCopy(path, pathCopy, true);
+            this.path = pathCopy;
         }
 
         public string GetPath() 
@@ -20,7 +22,7 @@ namespace Utrom
         }
         public bool CheckDirs()             
         {
-            string[] dirs = GetDericrories(path);
+            string[] dirs = GetDirecrories(path);
 
             for (int i = 0; i < dirs.Length; i++)
             {
@@ -32,7 +34,7 @@ namespace Utrom
 
         public void DelSameNameDirs()
         {
-            string[] dirs = GetDericrories(path);
+            string[] dirs = GetDirecrories(path);
             for (int i = 0; i < dirs.Length - 1; i++)
             {
                 Folder firstFolder = new  Folder(dirs[i]);
@@ -86,7 +88,6 @@ namespace Utrom
                                 {
                                     secondFolder.DeleteFolder();
                                     
-
                                 }
                                 else
                                 {
@@ -107,6 +108,7 @@ namespace Utrom
                     }
                 }
             }
+            dirs = GetDirecrories(path);
             for (int i = 0; i < dirs.Length; i++)
             {
                 Folder folder = new Folder(dirs[i]);
@@ -161,7 +163,7 @@ namespace Utrom
             }
         }
 
-        public string[] GetDericrories(string path)
+        public string[] GetDirecrories(string path)
         {
             string[] dirs = Directory.GetDirectories(path);
             return dirs;
@@ -171,6 +173,44 @@ namespace Utrom
         {
             string[] files = Directory.GetFiles(path);
             return files;
+        }
+
+
+        public void  DeleteCopyFolder() 
+        {
+            Directory.Delete(pathCopy, true);
+        }
+
+        private static void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
+        {
+            DirectoryInfo dir = new DirectoryInfo(sourceDirName);
+
+            if (!dir.Exists)
+            {
+                throw new DirectoryNotFoundException(
+                    "Source directory does not exist or could not be found: "
+                    + sourceDirName);
+            }
+
+            DirectoryInfo[] dirs = dir.GetDirectories();
+     
+            Directory.CreateDirectory(destDirName);
+
+            FileInfo[] files = dir.GetFiles();
+            foreach (FileInfo file in files)
+            {
+                string tempPath = Path.Combine(destDirName, file.Name);
+                file.CopyTo(tempPath, false);
+            }
+
+            if (copySubDirs)
+            {
+                foreach (DirectoryInfo subdir in dirs)
+                {
+                    string tempPath = Path.Combine(destDirName, subdir.Name);
+                    DirectoryCopy(subdir.FullName, tempPath, copySubDirs);
+                }
+            }
         }
     }
 }

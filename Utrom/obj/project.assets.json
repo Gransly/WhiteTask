@@ -8,21 +8,17 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\bob03\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\bob03\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bob03\\source\\repos\\C#Education\\Utrom\\Utrom\\Utrom.csproj",
+      "projectUniqueName": "D:\\Git\\WhiteTask\\Utrom\\Utrom.csproj",
       "projectName": "Utrom",
-      "projectPath": "C:\\Users\\bob03\\source\\repos\\C#Education\\Utrom\\Utrom\\Utrom.csproj",
+      "projectPath": "D:\\Git\\WhiteTask\\Utrom\\Utrom.csproj",
       "packagesPath": "C:\\Users\\bob03\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bob03\\source\\repos\\C#Education\\Utrom\\Utrom\\obj\\",
+      "outputPath": "D:\\Git\\WhiteTask\\Utrom\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\bob03\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -64,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

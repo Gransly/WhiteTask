@@ -30,11 +30,12 @@ namespace Utrom
         public void RenameFolder( bool sameNames)
         {
             string pathWithoutUUID = PathWithoutUUID();
-            if (sameNames && Directory.Exists(path))
+            if (sameNames)
             {
                 pathWithoutUUID += " (1)";
+                Directory.Move(path, pathWithoutUUID);
             }
-            else if (Directory.Exists(path))
+            else if (!Directory.Exists(pathWithoutUUID))
             {
                 Directory.Move(path, pathWithoutUUID);
             }

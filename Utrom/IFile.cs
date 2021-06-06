@@ -9,7 +9,6 @@ namespace Utrom
         void DeleteFile();
         void RenameFile(bool sameNames);
         string ReadFile();
-
         string PathWithoutUUID();
 
     }

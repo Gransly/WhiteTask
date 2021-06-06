@@ -18,22 +18,24 @@ namespace Utrom
                 if (args[0] == "--src" && args[2] == "--dest")
                 {
                     mainFolder = new MainFolder(args[1]);
-                    archiveFolder = new ArchiveFolder(args[2]);
-                    Console.WriteLine($"dirName: {mainFolder.GetPath()}\ndest:{archiveFolder.GetPath()}");
+                    archiveFolder = new ArchiveFolder(args[3]);
+                    Console.WriteLine($"dirName: {mainFolder.GetPath()}\ndest:{archiveFolder.Path}");
                 }
                 else
                 {
                     Console.WriteLine($"Error. Wrong args");
+                    Console.WriteLine($"Example: --src D:\\Utrom's secrets --dest D:\\Utrom's secrets2 ");
+                    return;
                 }
 
             }
-            while (!Directory.Exists(mainFolder.GetPath()))
+            while (mainFolder == null || !Directory.Exists(mainFolder.GetPath()))
             {
                 Console.Write("Source directory isn't exist\nWrite correct dirrectory (e.g: D:\\Utrom's secrets): ");
                 mainFolder = new MainFolder(Console.ReadLine());
             }
 
-            while (!Directory.Exists(archiveFolder.GetPath()))
+            while (archiveFolder == null || !Directory.Exists(archiveFolder.Path))
             {
                 Console.Write("Destination directory isn't exist\nWrite correct dirrectory (e.g: D:\\Utrom's secrets1): ");
                 archiveFolder = new ArchiveFolder(Console.ReadLine());
@@ -48,8 +50,10 @@ namespace Utrom
 
             mainFolder.DelSameNameDirs();
             mainFolder.DelSameNameFiles();
+            archiveFolder.Archive(mainFolder.GetPath(), "Utrom's secret");
+            mainFolder.DeleteCopyFolder();
 
-            archiveFolder.Archive(mainFolder.GetPath());
+            
 
         }
 
